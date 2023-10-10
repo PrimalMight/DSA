@@ -8,7 +8,7 @@ public class App {
         HraciPole pole = new HraciPole();
         HraciPole pole2 = new HraciPole();
         Scanner in = new Scanner(System.in);
-        pole.printPole();
+
 
         HashSet<HraciPole> mnozina = new HashSet<HraciPole>();
         mnozina.add(pole);
