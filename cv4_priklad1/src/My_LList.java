@@ -1,6 +1,18 @@
 public class My_LList{
     private Node head = new Node(0, null);
 
+    public Node getTail(){
+        Node current = head;
+        while (current != null){
+            current = current.next;
+        }
+        return current;
+    }
+
+    public Node getHead(){
+        return head;
+    }
+
     public void add(int value){
         head.next = new Node(value, head.next);
 

@@ -19,5 +19,10 @@ public class App {
 
         list.reverse();
         System.out.println(list.toString());
+        System.out.println("head: " + list.getHead());
+        System.out.println("head.next: " + list.getHead().next);
+        list.add(100);
+        System.out.println(list.toString());
+        System.out.println("tail: " + list.getTail());
     }
 }
