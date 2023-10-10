@@ -3,6 +3,7 @@ public class My_LList{
 
     public void add(int value){
         head.next = new Node(value, head.next);
+
     }
 
     public void remove(int value){
@@ -57,5 +58,16 @@ public class My_LList{
         }
         result += "\n";
         return result;
+    }
+
+    public void reverse(){
+        My_LList result = new My_LList();
+        Node current = head.next;
+
+        while (current != null){
+            result.add(current.value);
+            current = current.next;
+        }
+        this.head = result.head;
     }
 }
